@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_chat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.group32.inclass09.ChatActivity">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/listChat"
+        android:layout_below="@+id/textLoggedUser" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/gallery"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/buttonGallery"
+        android:scaleType="fitCenter" />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/logout"
+        android:layout_alignBottom="@+id/listView"
+        android:layout_alignLeft="@+id/buttonGallery"
+        android:layout_alignStart="@+id/buttonGallery"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginBottom="338dp"
+        android:id="@+id/buttonLogout"
+        android:scaleType="fitCenter" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/send"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/buttonGallery"
+        android:layout_toStartOf="@+id/buttonGallery"
+        android:id="@+id/buttonSend"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textLoggedUser"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/editMessage"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
